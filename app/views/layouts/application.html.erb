@@ -7,8 +7,11 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
+    <div class="NavBar">
+      <%= link_to 'home', {controller: 'topics' }, class: "NavBtn" %> 
+      <%= link_to 'search', {controller: 'topics', action: 'search'}, class: 'NavBtn' %>
+    </div>
     <%= yield %>
   </body>
 </html>

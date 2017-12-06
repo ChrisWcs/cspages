@@ -13,3 +13,28 @@
  *= require_tree .
  *= require_self
  */
+
+ .NavBar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 1px black solid;
+ }
+
+ a{
+    display: block;
+    font-family: Arial;
+    text-decoration: none;
+    font-size: 40px;
+    border: solid 1px black;
+    padding: 5px;
+    border-radius: 5px;
+    color: black;
+    margin-right: 5px;
+ }
+
+ a:hover{
+     background: black;
+     color: white;
+ }
